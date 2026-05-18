@@ -28,7 +28,26 @@ assets/images/    # All project images
 - Contact form page  
 - Social media links  
 - Dark mode toggle (optional enhancement)  
-- Clean and simple UI design  
+- Clean and simple UI design
+
+## Project Structure
+
+TECH-NOVA/
+│
+├── index.html
+├── product.html
+├── about.html
+├── contact.html
+│
+├── index.css
+├── product.css
+├── about.css
+├── contact.css
+│
+├── script.js
+│
+└── assets/
+    └── images/
 
 ## Technologies Used
 - HTML  
