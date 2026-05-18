@@ -19,3 +19,16 @@ footer{
     text-align:end;
     padding: 20px;
 }
+body.dark-mode{
+    background: #121212;
+    color: white;
+}
+
+body.dark-mode .nav-links{
+    background: #1f1f1f;
+}
+
+body.dark-mode button{
+    background: white;
+    color: black;
+}

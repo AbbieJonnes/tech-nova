@@ -49,38 +49,81 @@ main{
 /* SECTIONS */
 section{
     margin-bottom: 40px;
-    text-align: center;
 }
 
 h2{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    text-align: center;
     color: black;
+}
+
+/* PRODUCTS HORIZONTAL */
+#headphones,
+#smartphones,
+#laptops{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* PRODUCT CARDS */
+#headphones div,
+#smartphones div,
+#laptops div{
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 /* IMAGES */
 img{
-    width: 250px;
-    height: auto;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
-    display: block;
-    margin: 10px auto;
-    border: 2px solid #ddd;
+    margin-bottom: 10px;
 }
 
-/* PRODUCT CARD */
-div{
-    margin: 10px auto;
-    padding: 10px;
+/* TEXT */
+h3{
+    margin: 10px 0;
+}
+
+p{
+    margin-bottom: 10px;
+}
+/*PRICING*/
+#low,
+#high,
+#top{
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+/* STARS */
+.fa-star{
+    color: gold;
+    margin-bottom: 5px;
 }
 
 /* BUTTON */
 button{
-    padding: 8px 12px;
+    padding: 10px 15px;
     background: black;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 button:hover{
@@ -100,4 +143,18 @@ footer div a{
     margin: 0 10px;
     color: black;
     font-size: 20px;
+}
+
+body.dark-mode{
+    background: #121212;
+    color: white;
+}
+
+body.dark-mode .nav-links{
+    background: #1f1f1f;
+}
+
+body.dark-mode button{
+    background: white;
+    color: black;
 }
